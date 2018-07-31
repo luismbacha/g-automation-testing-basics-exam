@@ -1,0 +1,22 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+
+<suite name="Exam test suite">
+	<parameter name="browser" value="FIREFOX" />
+	<parameter name="driverLocation" value="/Users/lumartinez/drivers/geckodriver" />
+	<parameter name="homeUrl" value="http://www.travelocity.com/" />
+	<parameter name="hotelName" value="Dunes Manor Hotel" />
+	<parameter name="destinationValue" value="Europe" />
+	<test name="Exam test">
+		<classes>
+			<class name="com.globantu.automation.luis_armando_martinez_bacha.tests.ExamTests">
+				<methods>
+					<include name="HP_booking_flight_with_credit_card" />
+					<include name="HP_booking_flight_hotel_and_car_with_credit_card" />
+					<include name="HP_verify_search_by_hotel_name" />
+					<include name="ES_verify_error_message_for_incorrect_hotel_dates" />
+					<include name="HP_verify_cruises_information" />
+				</methods>
+			</class>
+		</classes>
+	</test>
+</suite>
